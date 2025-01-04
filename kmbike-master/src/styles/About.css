@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F1E0; 
+    color: #3E3E3E; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #000000; 
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A66C1E; 
+    padding: 20px;
+    border-bottom: 5px solid #5A4E27;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 15px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #FFFFFF; 
+    font-weight: bold;
+  }
+  
+  .bicicletas-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F1E0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #3E3E3E; 
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .card {
+    border: 2px solid #5A4E27; 
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    background: #92a043; 
+    color: #FFFFFF; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+  }
+  
+  .card-content {
+    font-size: 1rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 1024px) {
+    .card {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(100% - 20px);
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-description {
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 1.3rem;
+    }
+  
+    .card-content {
+      font-size: 0.9rem;
+    }
+  }
+  
